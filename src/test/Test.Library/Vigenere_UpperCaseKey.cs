@@ -17,14 +17,14 @@ namespace Test.Library
             vSingleLetter = new VigenereCode("A", 0);
         }
 
-        [Test]
+        [Test]//esta corre
         public void Decrypt_UpperCaseCode()
         {
             string result = vUpperCase.Decrypt("JTIATUGCWCQHCK");
             Assert.AreEqual("PROGRAMACIONII",result);
         }
 
-        [Test]
+        [Test]//esta corre
         public void Decrypt_UpperCaseCode_SingleLetter()
         {
             string result = vSingleLetter.Decrypt("PROGRAMACIONII");
@@ -37,7 +37,7 @@ namespace Test.Library
             string result = vUpperCase.Encrypt("PROGRAMACIONII");
             Assert.AreEqual("JTIATUGCWCQHCK",result);
         }
-        [Test]
+        [Test]//esta corre
         public void Decrypt_LowerCaseCode()
         {
             string result = vUpperCase.Decrypt("jtiatugcwcqhck");

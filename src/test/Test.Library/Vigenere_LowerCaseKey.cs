@@ -17,7 +17,7 @@ namespace Test.Library
             vLowerCaseSalt = new VigenereCode("ucu", 5);
         }
 
-        [Test]
+        [Test]//este corre
         public void Decrypt_UpperCaseCode()
         {
             string result = vLowerCase.Decrypt("JTIATUGCWCQHCK");
@@ -44,7 +44,7 @@ namespace Test.Library
             string result = vLowerCaseSalt.Encrypt("PROGRAMACIONII");
             Assert.AreEqual("OYNFYZLHBHVMHP",result);
         }
-        [Test]
+        [Test]//este corre
         public void Decrypt_LowerCaseCode()
         {
             string result = vLowerCase.Decrypt("jtiatugcwcqhck");
